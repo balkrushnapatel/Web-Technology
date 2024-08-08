@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let stud1 = {
+            name: "Rahul",
+            age: 20,
+            marks: 90,
+            address: "Delhi"
+        }
+
+        function first(num1,num2,callback){
+            console.log(num1 + num2 );
+            callback();
+        }
+
+        function second() {
+            console.log("Hello");
+        }
+        
+        function third() {
+            console.log("World");
+        }
+
+        first(10,30,second)
+        first(20,50,third)
+
+    </script>
+</body>
+
+</html>
